@@ -57,11 +57,11 @@ open class SectionHolder(protected var modifiedDataSetListener: DataSetModifiedL
             }
         }
 
-        if(result) {
-            launch(UI) {
-                modifiedDataSetListener?.onInserted(size, element.size)
-            }
-        }
+//        if(result) {
+//            launch(UI) {
+//                modifiedDataSetListener?.onInserted(size, element.size)
+//            }
+//        }
 
         return result
     }
@@ -92,11 +92,11 @@ open class SectionHolder(protected var modifiedDataSetListener: DataSetModifiedL
                     }
                 }
 
-                if (result) {
-                    launch(UI) {
-                        modifiedDataSetListener?.onInserted(size, addSizes)
-                    }
-                }
+//                if (result) {
+//                    launch(UI) {
+//                        modifiedDataSetListener?.onInserted(size, addSizes)
+//                    }
+//                }
             }
         }
 
@@ -107,10 +107,10 @@ open class SectionHolder(protected var modifiedDataSetListener: DataSetModifiedL
         val index = sections.indexOf(element)
         val relativePosition = getRelativePosition(index)
         val result = sections.remove(element)
-
-        if (result) {
-            modifiedDataSetListener?.onRemoved(relativePosition, element.size)
-        }
+//
+//        if (result) {
+//            modifiedDataSetListener?.onRemoved(relativePosition, element.size)
+//        }
 
         return result
     }

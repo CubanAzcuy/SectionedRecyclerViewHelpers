@@ -6,9 +6,12 @@ import com.dev925.sectionrecyclerviewhelper.section.Section
 
 class SectionTest : Section() {
     init {
-        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 1"))
-        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 2"))
-        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 3"))
+        sectionHeader = Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.HEADER.ordinal, "Header")
+
+//        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 1"))
+//        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 2"))
+//        add(Row(ExpandableSectionRecyclerViewAdapter.ViewHolders.BODY.ordinal, "Self Body 3"))
+//    }
     }
 
 }
